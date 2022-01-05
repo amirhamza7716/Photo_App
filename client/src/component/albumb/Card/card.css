@@ -1,0 +1,115 @@
+.main{
+    width:100%;
+    height: 1200px;
+  }
+  .container{
+  
+    position: relative;
+    /* width:1280px; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  }
+  .container .card{
+    position:relative;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(#2196f3,#2196f3 30%,#1d3548,#1d3548);
+    margin:5px;
+    border-radius: 20px;
+    overflow: hidden;
+  
+  }
+  .container .card .imgBx{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index:100000;
+  transform-origin: top;
+  
+  
+  }
+  
+  .container .card:hover .imgBx{
+  transform: translateY(20px) scale(0.5);
+  height: 50%;
+  /* display: none; */
+  }
+  
+  .container .card .imgBx img{
+    position:absolute;
+     top:0;
+      left:0;
+      width:100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  
+  .container .card .Visitdetail{
+    position:absolute;
+     top:0;
+     left:0;
+     width:100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+     padding-bottom: 20px;
+     transform: translateY(100%);
+     transition: 0.5s;
+  }
+  .container .card:hover .Visitdetail{
+  transform: translateY(0);
+  }
+  
+  .container .card .Visitdetail .About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container .card .Visitdetail .About h2{
+    height: 20px;
+    width: 70%;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+  
+  }
+  
+  .container .card .Visitdetail .About h3{
+    height: 10px;
+    width: 70%;
+    font-size: 0.8em;
+    font-weight: 400;
+    color:#03a9fa;
+  }
+  .container .card .Visitdetail .About h6{
+    color:#03a9fa;
+  }
+  
+  .container .card .Visitdetail .About .social_icon{
+    position: relative;
+    display: flex;
+    /* margin-top: 5px; */
+  
+  }
+  .social_icon .icon_list{
+    list-style:none;
+    margin: 2px;
+  }
+  
+  #likecounter{
+    color: white!important;
+    
+    align-items: center;
+    justify-content: center;
+    
+  }
